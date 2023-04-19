@@ -1,0 +1,9 @@
+const express = require('express');
+const router = express.Router()
+
+router.get('/BodyRequest', (req, res) => {
+    console.log(req.body);
+    res.send("This is sended by BodyRequest router ")
+})
+
+module.exports = router
