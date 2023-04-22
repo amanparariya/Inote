@@ -3,7 +3,7 @@ const router = express.Router()
 
 router.get('/BodyRequest', (req, res) => {
     console.log(req.body);
-    res.send("This is sended by BodyRequest router ")
+    res.send(req.body);
 })
 
 module.exports = router
